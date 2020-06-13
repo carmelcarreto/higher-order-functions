@@ -125,16 +125,22 @@ const autos = [
 ];
 
 
-// forEach
+/* // forEach
 let resultado = [];
 autos.forEach(auto => {
 	if(auto.color === 'Rojo'){
 		resultado.push(auto);
 	}
 });
-console.log(resultado);
+console.log(resultado); */
 
 // map
+let resultado = autos.map(auto => {
+	if(auto.marca === 'BMW'){
+		return auto;
+	}
+});
+console.log(resultado);
 
 // filter
 
