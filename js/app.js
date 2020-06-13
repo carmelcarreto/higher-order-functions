@@ -135,14 +135,22 @@ autos.forEach(auto => {
 console.log(resultado); */
 
 // map
-let resultado = autos.map(auto => {
+/* let resultado = autos.map(auto => {
 	if(auto.marca === 'BMW'){
 		return auto;
 	}
 });
-console.log(resultado);
+console.log(resultado); */
 
 // filter
+//let resultado = autos.filter(auto => auto.marca !== 'BMW');
+//let resultado = autos.filter(auto => auto.color === 'Rojo');
+//let resultado = autos.filter(auto => auto.year === 2018);
+//let resultado = autos.filter(auto => auto.year > 2015);
+//let resultado = autos.filter(auto => auto.precio > 50000);
+//let resultado = autos.filter(auto => auto.transmision === 'manual');
+let resultado = autos.filter(auto => auto.year >= 2015 && auto.marca === 'BMW');
+console.log(resultado);
 
 // find
 
