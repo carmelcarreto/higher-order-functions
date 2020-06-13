@@ -158,11 +158,12 @@ let resultado = autos.find(auto => auto.modelo === 'Mustang');
 console.log(resultado); */
 
 // reduce
-//let resultado = autos.reduce((total, auto) => total + auto.precio, 0);
+/* //let resultado = autos.reduce((total, auto) => total + auto.precio, 0);
 const numeros = [1,2,3];
 let resultado = numeros.reduce((total, numero) => total + numero, 100);
-console.log(resultado);
+console.log(resultado); */
 
 // some
-
+let resultado = autos.some(auto => auto.precio > 1000000);
+console.log(resultado);
 
